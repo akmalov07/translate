@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Translate App</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="app">Translate App</h2>
+
+        <form action="" id="form">
+            <div class="textarea-container">
+                <textarea name="fromLan" id="fromLan" placeholder="Matnni kiriting..." rows="5"></textarea>
+                <span class="speaker-icon" onclick="speakText('fromLan')">🔊</span>
+            </div>
+            <div class="textarea-container">
+                <textarea name="toLan" id="toLan" placeholder="Tarjima natijasi..." rows="5" readonly></textarea>
+                <span class="speaker-icon" onclick="speakText('toLan')">🔊</span>
+            </div>
+
+            <select name="fromLanguage" id="fromLanguage"></select>
+            <select name="toLanguage" id="toLanguage"></select>
+
+            <button type="submit" class="translate">Tarjima qilish</button>
+        </form>
+    </div>
+
+    <script src="./js/lan.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
